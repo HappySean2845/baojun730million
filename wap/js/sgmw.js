@@ -154,16 +154,16 @@ function addInfo(_name, _tel, _province, _city, _dealer) {
             lid: 0,
             name: _name,
             phone: _tel,
-            key: md5(_tel).toUpperCase().substr(0, 10), 
+            key: md5(_tel).toUpperCase().substr(0, 10),
             province: _province,
             city: _city,
             dealercode: _dealer,
             cartype: '宝骏730',
-            mark: '',  
-            source: '全新宝骏730预约试驾WAP',  
-            ordering: 0, 
-            driving: 1, 
-            credit: 0  
+            mark: '',
+            source: '全新宝骏730预约试驾WAP',
+            ordering: 0,
+            driving: 1,
+            credit: 0
 
         },
         jsonp: 'callback',
@@ -174,7 +174,7 @@ function addInfo(_name, _tel, _province, _city, _dealer) {
                 var p = $("#pro option:selected").text();
                 var c = $("#city option:selected").text();
                 var d = $("#delear option:selected").text();
-                _smq.push(['custom', '17-baojun', '730millionsownerMB-home-sumbitsuccess', '{' + _name + '+' + _tel + '+' + p + '+' + c + '+success}']);
+                _smq.push(['custom', '17-baojun', '730rebagMB-home-submitsuccess', '{' + _name + '_' + _tel + '_' + p + '_' + c + '_'+_dealer+'}']);
 
             } else if (wr == 2) {
                 alert('您已预约成功,请勿重复提交');

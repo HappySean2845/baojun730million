@@ -87,10 +87,12 @@ $("#city").change(function (event) {
 createPro();
 
 
-
+$('.class').click(function(){
+    _smq.push(['custom','17-baojun','730rebagPC-home-get']);
+})
 
 $(".commit").click(function (event) {
-    _smq.push(['custom', '17-baojun', '730millionsownerPC-home-sumbit']);
+    _smq.push(['custom','17-baojun','730rebagPC-home-submit']);
     var name = $("#name").val();
 
     if (!validate.isEmpty(name)) {

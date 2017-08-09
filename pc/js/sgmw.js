@@ -175,7 +175,7 @@ function addInfo(_name, _tel, _province, _city, _dealer) {
                 var p = $("#pro option:selected").text();
                 var c = $("#city option:selected").text();
                 var d = $("#delear option:selected").text();
-                _smq.push(['custom', '17-baojun', '730millionsownerPC-home-sumbitsuccess', '{' + _name + '+' + _tel + '+' + p + '+' + c + '+success}']);
+                _smq.push(['custom', '17-baojun', '730rebagPC-home-submitsuccess', '{' + _name + '_' + _tel + '_' + p + '_' + c + '_'+_dealer+'}']);
 
             } else if (wr == 2) {
                 alert('您已预约成功,请勿重复提交');
