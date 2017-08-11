@@ -175,7 +175,20 @@ function addInfo(_name, _tel, _province, _city, _dealer) {
                 var c = $("#city option:selected").text();
                 var d = $("#delear option:selected").text();
                 _smq.push(['custom', '17-baojun', '730rebagMB-home-submitsuccess', '{' + _name + '_' + _tel + '_' + p + '_' + c + '_'+_dealer+'}']);
-
+                var leadsID = "sqtywl" + new Date().getTime() + "-" + Math.floor(Math.random() * 1000);
+                if (window.gsTracker) {
+                    var orderid = leadsID;
+                    gsTracker.addOrder(orderid, 1);
+                    gsTracker.setEcomProperty(orderid, "1", _name);
+                    gsTracker.setEcomProperty(orderid, "2", _tel);
+                    gsTracker.setEcomProperty(orderid, "3", "baojun730");
+                    gsTracker.setEcomProperty(orderid, "4", p);
+                    gsTracker.setEcomProperty(orderid, "5", c);
+                    gsTracker.setEcomProperty(orderid, "6", _dealer);
+                    gsTracker.addProduct(orderid, location.pathname, location.pathname, 1,1, "点击领取红包");
+                    gsTracker.trackECom();
+                    gsTracker.track("/targetpage/formsubmit/sqtywlwap");
+                }
             } else if (wr == 2) {
                 alert('您已预约成功,请勿重复提交');
             } else {
