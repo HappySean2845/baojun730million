@@ -175,6 +175,23 @@ function addInfo(_name, _tel, _province, _city, _dealer) {
                 var p = $("#pro option:selected").text();
                 var c = $("#city option:selected").text();
                 var d = $("#delear option:selected").text();
+                var leadsID = "sqtywl" + new Date().getTime() + "-" + Math.floor(Math.random() * 1000);
+                if (window.gsTracker) {
+                    var orderid = leadsID;
+                    gsTracker.addOrder(orderid, 1);
+                    gsTracker.setEcomProperty(orderid, "1", _name);
+                    gsTracker.setEcomProperty(orderid, "2", _tel);
+                    gsTracker.setEcomProperty(orderid, "3", "宝骏730");
+                    gsTracker.setEcomProperty(orderid, "4", p);
+                    gsTracker.setEcomProperty(orderid, "5", c);
+                    gsTracker.setEcomProperty(orderid, "6", d);
+                    gsTracker.addProduct(orderid, location.pathname, location.pathname, 1,1, "宝骏730");
+                    //此处可以根据活动页面实际title进行更换；
+                    gsTracker.trackECom();
+                    gsTracker.track("/targetpage/formsubmit/sqtywlpc");
+                    // gsTracker.track("/targetpage/formsubmit/sqtywlwap");
+                }
+
                 _smq.push(['custom', '17-baojun', '730rebagPC-home-submitsuccess', '{' + _name + '_' + _tel + '_' + p + '_' + c + '_'+_dealer+'}']);
                 window.location.href = "http://mall.autohome.com.cn/detail/393753-0-0.html#pvareaid=2583393";
             } else if (wr == 2) {
