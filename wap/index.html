@@ -35,22 +35,22 @@
 
     <div class="bg1">
         <div class="wrapper">
-            <div class="logo">
+            <!-- <div class="logo">
                 <img src="img/logo.png" />
             </div>
             <div class="title1">
                 <img src="img/title1.png" />
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="bg2">
         <div class="wrapper">
             <div class="top1">
-                <img src="img/top1.png" />
-                <a href="http://mall.autohome.com.cn/subject/2017/7/baojun73033/#pvareaid=105505" class="text">点击领取红包</a>
+                <img src="img/wap/2.png" />
+                <a href="http://mall.autohome.com.cn/subject/2017/7/baojun73033/#pvareaid=105505" class="text"></a>
             </div>
             <div class="top2">
-                <img src="img/top2.png" />
+                <img src="img/wap/3.png" />
                 <input type="text" id="name" />
                 <input type="text" maxlength="11" id="tel" />
                 <select id="pro"></select>
@@ -63,7 +63,7 @@
 
             </div>
             <div class="btn">
-                <img src="img/btn1.png" />
+                <img src="img/wap/4.png" style=""/>
             </div>
         </div>
 
@@ -118,7 +118,7 @@
             });
             $('.text').click(function(){
                 _smq.push(['custom','17-baojun','730rebagMB-home-get']);
-                _gsq.push(['T', 'GWD-002942', 'trackEvent', 'click', '点击送祝福',location.pathname]);
+                _gsq.push(['T', 'GWD-002942', 'trackEvent', 'click', '点击送祝福wap',location.pathname]);
             })
             createPro();
 
@@ -129,31 +129,33 @@
                 if (w <= 910) {
                     $(".wrapper").css("width", "100%");
                     $(".bg1").css("background-size", "100%");
-                    $(".bg1").css("background-image", "url(img/bg1W.jpg)");
-                    $(".bg1").css("height", (w / 910) * 975);
+                    $(".bg1").css("background-image", "url(img/wap/1.jpg)");
+                    $(".bg1").css("height", (w / 910) * 475);
                     $(".bg2").css("background-size", "100%");
                     $(".bg2").css("background-image", "url(img/bg2W.jpg)");
                     $(".bg2").css("height", (w / 910) * 1491);
-                    $("#name").css("height", (w / 910) * 50);
+                    $("#name").css("height", (w / 910) * 33);
                     $("#name").css("width", (w / 910) * 118);
-                    $("#name").css("top", (w / 910) * 190);
-                    $("#name").css("left", (w / 910) * 136);
-                    $("#tel").css("height", (w / 910) * 50);
+                    $("#name").css("top", (w / 910) * 165);
+                    $("#name").css("left", (w / 910) * 130);
+                    $("#tel").css("height", (w / 910) * 33);
                     $("#tel").css("width", (w / 910) * 116);
-                    $("#tel").css("top", (w / 910) * 190);
-                    $("#tel").css("left", (w / 910) * 348);
+                    $("#tel").css("top", (w / 910) * 165);
+                    $("#tel").css("left", (w / 910) * 344);
                     $("#pro").css("height", (w / 910) * 32);
                     $("#pro").css("width", (w / 910) * 143);
-                    $("#pro").css("top", (w / 910) * 264);
-                    $("#pro").css("left", (w / 910) * 97);
+                    $("#pro").css("top", (w / 910) * 232);
+                    $("#pro").css("left", (w / 910) * 91);
                     $("#city").css("height", (w / 910) * 32);
                     $("#city").css("width", (w / 910) * 144);
-                    $("#city").css("top", (w / 910) * 264);
-                    $("#city").css("left", (w / 910) * 312);
+                    $("#city").css("top", (w / 910) * 232);
+                    $("#city").css("left", (w / 910) * 309);
                     $("#delear").css("height", (w / 910) * 32);
                     $("#delear").css("width", (w / 910) * 289);
-                    $("#delear").css("top", (w / 910) * 331);
-                    $("#delear").css("left", (w / 910) * 160);
+                    $("#delear").css("top", (w / 910) * 299);
+                    $("#delear").css("left", (w / 910) * 156);
+                    $(".btn").css("width", (w / 910) * 197);
+                    $(".btn").css("left", (w / 910) * 357);
                     $("#name").css("font-size", "10px");
                     $("#tel").css("font-size", "10px");
                     $("#pro").css("font-size", "10px");
