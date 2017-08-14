@@ -185,7 +185,7 @@ function addInfo(_name, _tel, _province, _city, _dealer) {
                     gsTracker.setEcomProperty(orderid, "4", p);
                     gsTracker.setEcomProperty(orderid, "5", c);
                     gsTracker.setEcomProperty(orderid, "6", d);
-                    gsTracker.addProduct(orderid, location.pathname, location.pathname, 1,1, "宝骏730");
+                    gsTracker.addProduct(orderid, location.pathname, location.pathname, 1,1, "宝骏730专题页");
                     //此处可以根据活动页面实际title进行更换；
                     gsTracker.trackECom();
                     // gsTracker.track("/targetpage/formsubmit/sqtywlpc");
