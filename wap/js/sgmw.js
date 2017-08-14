@@ -189,6 +189,7 @@ function addInfo(_name, _tel, _province, _city, _dealer) {
                     gsTracker.trackECom();
                     gsTracker.track("/targetpage/formsubmit/sqtywlwap");
                 }
+                window.location.href = "http://mall.autohome.com.cn/detail/393753-0-0.html#pvareaid=2583393"
             } else if (wr == 2) {
                 alert('您已预约成功,请勿重复提交');
             } else {

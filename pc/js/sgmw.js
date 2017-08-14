@@ -189,7 +189,7 @@ function addInfo(_name, _tel, _province, _city, _dealer) {
                     gsTracker.track("/targetpage/formsubmit/sqtywlpc");
                 }
                 _smq.push(['custom', '17-baojun', '730rebagPC-home-submitsuccess', '{' + _name + '_' + _tel + '_' + p + '_' + c + '_'+_dealer+'}']);
-
+                window.location.href = "http://mall.autohome.com.cn/detail/393753-0-0.html#pvareaid=2583393";
             } else if (wr == 2) {
                 alert('您已预约成功,请勿重复提交');
             } else {
